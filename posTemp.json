@@ -1,0 +1,19 @@
+{
+  "alias": "posTemperatureWidget",
+  "name": "POS Temperature",
+  "descriptor": {
+    "type": "latest",
+    "sizeX": 4,
+    "sizeY": 3,
+    "resources": [
+      {
+        "type": "js",
+        "url": "https://git-rpos.vtnx.net/thingsboard/tb_extensions/widgetextensions/-/raw/feature/overviews/public/dist/thingsboard-extension-widgets.js",
+        "external": true
+      }
+    ],
+    "templateHtml": "<div class='tb-widget-container' style='padding: 20px; font-size: 20px; color: #0088cc;'>{{message}}</div>",
+    "templateCss": "",
+    "controllerScript": "self.onInit = function() {\n};\n\nself.onDataUpdated = function() {\n    self.ctx.$scope.TbAppNavPanelComponent.onDataUpdated();\n};\n\nself.onResize = function() {\n};\n\nself.onDestroy = function() {\n};\n\nself.PosTempWidgetController = function(ctx, config) {\n  console.log(\"✅ Widget Controller geladen!\");\n  ctx.$scope.message = \"🌡️ POS Temperatur läuft!\";\n};"
+  }
+}
