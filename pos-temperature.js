@@ -1,0 +1,1 @@
+(function(){"use strict";const t="";self.PosTemperatureController=function(e,n){e.$scope.message="🌡️ Temperatur läuft!",e.$container[0].innerHTML=t,console.log("✅ Widget geladen: pos-temperature")}})();
